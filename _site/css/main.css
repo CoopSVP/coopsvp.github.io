@@ -4,10 +4,11 @@ body {
   width: 100%; }
 
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif; }
+  /*@include serif-font;*/
+  font-family: Helvetica, Arial, sans-serif; }
 
 hr {
-  border-color: #0C6F44;
+  border-color: #3D9B35;
   border-width: 3px;
   max-width: 50px; }
 
@@ -18,10 +19,17 @@ a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
-  color: #0C6F44; }
+  color: #3D9B35; }
   a:hover, a:focus {
-    color: #074128; }
+    color: #2e7528; }
 
+/* 
+.bg-primary a{
+	color: white;
+	&:focus {
+		color: darken(white, 50%);
+	}
+} */
 h1,
 h2,
 h3,
@@ -33,10 +41,13 @@ h6 {
 p {
   font-size: 16px;
   line-height: 1.5;
+  margin-bottom: 5px; }
+
+div.row {
   margin-bottom: 20px; }
 
 .bg-primary {
-  background-color: #0C6F44; }
+  background-color: #3D9B35; }
 
 .bg-dark {
   background-color: #222;
@@ -46,7 +57,7 @@ p {
   color: rgba(255, 255, 255, 0.7); }
 
 section {
-  padding: 100px 0; }
+  padding: 50px 0; }
 
 aside {
   padding: 50px 0; }
@@ -60,17 +71,17 @@ aside {
 .navbar-default {
   background-color: white;
   border-color: rgba(34, 34, 34, 0.5);
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  /*@include sans-serif-font;*/
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s; }
   .navbar-default .navbar-header .navbar-brand {
-    color: #0C6F44;
+    color: #3D9B35;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     font-weight: 700;
     text-transform: uppercase; }
     .navbar-default .navbar-header .navbar-brand:hover, .navbar-default .navbar-header .navbar-brand:focus {
-      color: #074128; }
+      color: #2e7528; }
   .navbar-default .nav > li > a,
   .navbar-default .nav > li > a:focus {
     text-transform: uppercase;
@@ -79,17 +90,22 @@ aside {
     color: #222; }
     .navbar-default .nav > li > a:hover,
     .navbar-default .nav > li > a:focus:hover {
-      color: #0C6F44; }
+      color: #3D9B35; }
   .navbar-default .nav > li.active > a,
   .navbar-default .nav > li.active > a:focus {
-    color: #0C6F44 !important;
+    color: #3D9B35 !important;
     background-color: transparent; }
     .navbar-default .nav > li.active > a:hover,
     .navbar-default .nav > li.active > a:focus:hover {
       background-color: transparent; }
+  .navbar-default .nav > li#logo > a {
+    font-size: 30px;
+    font-family: 'Alegreya Sans';
+    font-style: italic;
+    text-transform: none; }
   @media (min-width: 768px) {
     .navbar-default {
-      background-color: #0C6F44;
+      background-color: #3D9B35;
       border-color: rgba(255, 255, 255, 0.3); }
       .navbar-default .navbar-header .navbar-brand {
         color: rgba(255, 255, 255, 0.9); }
@@ -105,16 +121,16 @@ aside {
         background-color: white;
         border-color: rgba(34, 34, 34, 0.5); }
         .navbar-default.affix .navbar-header .navbar-brand {
-          color: #0C6F44;
+          color: #3D9B35;
           font-size: 14px; }
           .navbar-default.affix .navbar-header .navbar-brand:hover, .navbar-default.affix .navbar-header .navbar-brand:focus {
-            color: #074128; }
+            color: #2e7528; }
         .navbar-default.affix .nav > li > a,
         .navbar-default.affix .nav > li > a:focus {
-          color: #0C6F44; }
+          color: #3D9B35; }
           .navbar-default.affix .nav > li > a:hover,
           .navbar-default.affix .nav > li > a:focus:hover {
-            color: #0C6F44; } }
+            color: #3D9B35; } }
 
 header {
   position: relative;
@@ -142,7 +158,8 @@ header {
       /*background-color: rgba(white, .6);
       border-radius: 300px; 	
       width: inherit;*/
-      font-size: 3em !important; }
+      font-size: 3em !important;
+      font-family: 'Alegreya Sans'; }
     header .header-content .header-content-inner hr {
       margin: 30px auto; }
     header .header-content .header-content-inner p {
@@ -191,7 +208,7 @@ header {
     color: white;
     opacity: 0;
     display: block;
-    background: rgba(12, 111, 68, 0.9);
+    background: rgba(61, 155, 53, 0.9);
     position: absolute;
     bottom: 0;
     text-align: center;
@@ -224,11 +241,11 @@ header {
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
       font-size: 22px; } }
 
-.call-to-action h2 {
+.first-block h2 {
   margin: 0 auto 20px; }
 
 .text-primary {
-  color: #0C6F44; }
+  color: #3D9B35; }
 
 .no-gutter > [class*='col-'] {
   padding-right: 0;
@@ -256,22 +273,22 @@ header {
 
 .btn-primary {
   color: white;
-  background-color: #0C6F44;
-  border-color: #0C6F44;
+  background-color: #3D9B35;
+  border-color: #3D9B35;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle .btn-primary {
     color: white;
-    background-color: #0a5836;
-    border-color: #094f30; }
+    background-color: #36882f;
+    border-color: #33802c; }
   .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle .btn-primary {
     background-image: none; }
   .btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
-    background-color: #0C6F44;
-    border-color: #0C6F44; }
+    background-color: #3D9B35;
+    border-color: #3D9B35; }
   .btn-primary .badge {
-    color: #0C6F44;
+    color: #3D9B35;
     background-color: white; }
 
 .btn {
@@ -285,7 +302,7 @@ header {
   padding: 15px 30px; }
 
 #contact .fa {
-  color: #222;
+  color: #fff;
   font-size: 4em; }
 
 ::-moz-selection {

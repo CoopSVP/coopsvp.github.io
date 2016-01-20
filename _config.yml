@@ -1,12 +1,13 @@
 # Site settings
-title: Coopérative d'habitants Saint-Vincent de Paul 75014
+title: Pour une coopérative d'habitants - Eco-quartier Saint-Vincent-de-Paul 75014
 email:
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
-twitter_username:
-github_username:
+twitter_username: CESVP
+facebook_username:
+email: coopsvp@gmail.com
 
 # Build settings
 markdown: kramdown

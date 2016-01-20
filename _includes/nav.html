@@ -13,21 +13,27 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-left">
+				<li  id="logo">
+                    <a href="{{ "/" | prepend: site.baseurl }}">CoopSVP</a>
+                </li>
+			</ul>
             <ul class="nav navbar-nav navbar-right">
-                <li>
+				<li><a class="page-scroll" href="{{ "/" | prepend: site.baseurl }}#cooperative">
+                    Pour une coopérative d'habitants</a>
+                </li>			
+               <!--  <li>
                     <a class="page-scroll" href="#about">Le projet</a>
-                </li>
-				<li>
-                    <a class="page-scroll" href="#portfolio">La coopérative d'habitants</a>
-                </li>
+                </li> -->
+
                 <li>
-                    <a class="page-scroll" href="#services">Appel à candidature</a>
+                    <a href="{{ "/" | prepend: site.baseurl }}#appel-candidature" class="page-scroll">Appel à candidature</a>
                 </li>
-                <li>
+<!--                 <li>
                     <a class="page-scroll" href="http://www.cesvp.fr/tag/collectif-esvp/" target="_blank">Blog</a>
-                </li>
+                </li> -->
                 <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
+                    <a href="{{ "/" | prepend: site.baseurl }}#contact" class="page-scroll">Contactez-nous</a>
                 </li>
             </ul>
         </div>
