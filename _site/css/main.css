@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html,
 body {
   height: 100%;
@@ -153,24 +154,28 @@ header {
     text-align: center;
     padding: 100px 15px 100px;
     width: 100%; }
-    header .header-content .header-content-inner h1 {
-      font-weight: 700;
-      text-transform: uppercase;
-      margin-top: 150px;
-      margin-bottom: 0;
-      color: white;
-      /*background-color: rgba(white, .6);
-      border-radius: 300px; 	
-      width: inherit;*/
-      font-size: 3em !important;
-      font-family: 'Alegreya Sans'; }
-    header .header-content .header-content-inner hr {
-      margin: 30px auto; }
-    header .header-content .header-content-inner p {
-      font-weight: 300;
-      color: rgba(255, 255, 255, 0.7);
-      font-size: 16px;
-      margin-bottom: 50px; }
+    header .header-content .header-content-inner {
+      border-bottom: 3px solid #3D9B35 !important;
+      background-color: rgba(0, 0, 0, 0.5) !important; }
+      header .header-content .header-content-inner h1 {
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 150px;
+        margin-bottom: 0;
+        color: white;
+        font-size: 3em !important;
+        font-family: 'Alegreya Sans'; }
+        header .header-content .header-content-inner h1 span {
+          padding-top: 30px;
+          display: block; }
+      header .header-content .header-content-inner hr {
+        max-width: 300 px !important;
+        margin: 30px auto; }
+      header .header-content .header-content-inner p {
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 16px;
+        margin-bottom: 50px; }
   @media (min-width: 768px) {
     header {
       min-height: 600px; }
@@ -332,3 +337,28 @@ img::-moz-selection {
 
 body {
   -webkit-tap-highlight-color: #222; }
+
+/* classes personnalis├®es */
+.container ul {
+  margin-top: 10px; }
+  .container ul li {
+    margin-left: 5px;
+    list-style-type: none;
+    margin: 5px  0; }
+    .container ul li:before {
+      color: #3D9B35;
+      content: "\2713";
+      font-weight: bold;
+      padding-right: 10px; }
+
+.important {
+  font-weight: bold;
+  color: #3D9B35; }
+
+#pg-cooperative .container {
+  padding-left: 100px;
+  padding-right: 100px; }
+  #pg-cooperative .container p {
+    font-size: 14px !important; }
+#pg-cooperative header {
+  background-image: url("../img/header-coop-hab.jpg"); }

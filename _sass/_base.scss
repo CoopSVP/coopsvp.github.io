@@ -191,19 +191,20 @@ header {
         padding: 100px 15px 100px;
         width: 100%;
         .header-content-inner {
+			border-bottom: 3px solid $theme-primary !important;
+			background-color: rgba(0, 0, 0, 0.5) !important;
             h1 {
                 font-weight: 700;
                 text-transform: uppercase;
                 margin-top: 150px;
                 margin-bottom: 0;
 				color: white;
-				/*background-color: rgba(white, .6);
-				border-radius: 300px; 	
-				width: inherit;*/
 				font-size: 3em !important;
 				font-family: 'Alegreya Sans';
+				span {padding-top: 30px; display: block;}
             }
             hr {
+				max-width: 300 px !important;
                 margin: 30px auto;
             }
             p {
@@ -237,6 +238,7 @@ header {
         }
     }
 }
+
 
 // Sections
 
@@ -383,3 +385,30 @@ body {
     -webkit-tap-highlight-color: $theme-dark;
 }
 
+/* classes personnalisées */
+.container ul{
+	margin-top: 10px;
+	li {
+		margin-left: 5px;
+		list-style-type: none;
+		margin: 5px  0;
+		&:before {    
+			color: $theme-primary;
+			content:"\2713";
+			font-weight: bold;
+			padding-right: 10px;
+		}
+	}
+}
+.important {font-weight: bold; color: $theme-primary;}
+
+#pg-cooperative  {
+	.container {
+		padding-left: 100px;
+		padding-right: 100px;
+		p {	font-size: 14px !important; }
+	}
+	header{
+		background-image: url('../img/header-coop-hab.jpg');
+	}
+}
