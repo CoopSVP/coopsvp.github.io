@@ -65,6 +65,10 @@ div.row{
     color: white;
 }
 
+.bg-white {
+    background-color: white;
+}
+
 .text-faded {
     color: rgba(white, .7);
 }
@@ -147,9 +151,9 @@ aside {
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: rgba(white, .9);
+            color: white;
             &:hover {
-                color: rgba(white, .5);
+                color: rgba(white, .9);
             }
         }
         &.affix {
@@ -181,7 +185,7 @@ header {
     width: 100%;
     min-height: auto;
     @include background-cover;
-    background-position: -250px;
+    background-position: 0px -50px;
     background-image: url('../img/header.jpg');
     text-align: center;
     color: white;
@@ -196,7 +200,7 @@ header {
             h1 {
                 font-weight: 700;
                 text-transform: uppercase;
-                margin-top: 150px;
+                margin-top: 100px;
                 margin-bottom: 0;
 				color: white;
 				font-size: 3em !important;
@@ -216,7 +220,7 @@ header {
         }
     }
     @media (min-width: 768px) {
-        min-height: 600px;
+        min-height: 500px;
         .header-content {
             position: absolute;
             top: 50%;
@@ -263,15 +267,16 @@ header {
     max-width: 650px;
     margin: 20px auto;
     .portfolio-box-caption {
-        color: white;
-        opacity: 0;
+        /*color: white;
+        opacity: 0;*/
         display: block;
-        background: rgba( $theme-primary, .9 );
+        background: rgba( $theme-primary, .2 );
         position: absolute;
         bottom: 0;
         text-align: center;
-        width: 100%;
+        width: 410px;
         height: 100%;		
+		margin-left: 240px;
         @include transition-all;
         .portfolio-box-caption-content {
             width: 100%;
@@ -288,15 +293,21 @@ header {
                 text-transform: uppercase;
                 font-weight: 600;
                 font-size: 14px;
+				color: $theme-primary;
             }
             .project-name {
-                font-size: 18px;
+                font-size: 12px;
+				color: $theme-dark;
             }
         }
     }
     &:hover {
         .portfolio-box-caption {
             opacity: 1;
+			 background: rgba( $theme-primary, .9 );
+			 .portfolio-box-caption-content .project-category {
+				color: white;
+			 }
         }
     }
     @media (min-width: 768px) {
@@ -306,7 +317,7 @@ header {
                     font-size: 16px;
                 }
                 .project-name {
-                    font-size: 22px;
+                    font-size: 14px;
                 }
             }
         }
@@ -386,29 +397,29 @@ body {
 }
 
 /* classes personnalisées */
-.container ul{
-	margin-top: 10px;
-	li {
-		margin-left: 5px;
-		list-style-type: none;
-		margin: 5px  0;
-		&:before {    
-			color: $theme-primary;
-			content:"\2713";
-			font-weight: bold;
-			padding-right: 10px;
+.container {
+	padding-left: 50px;
+	padding-right: 50px;
+	p {	font-size: 14px !important; }
+	ul{
+		margin-top: 10px;
+		padding-left: 10px;
+		li {
+			list-style-type: none;
+			margin: 10px  0;
+			&:before {    
+				color: $theme-primary;
+				content:"\2713";
+				font-weight: bold;
+				padding-right: 10px;
+				font-size: 14px;
+			}
 		}
 	}
 }
-.important {font-weight: bold; color: $theme-primary;}
+strong {font-weight: bold; color: $theme-primary;}
+.portfolio-img {width: 236px; height: 236px;}
 
-#pg-cooperative  {
-	.container {
-		padding-left: 100px;
-		padding-right: 100px;
-		p {	font-size: 14px !important; }
-	}
-	header{
-		background-image: url('../img/header-coop-hab.jpg');
-	}
-}
+#pg-cooperative  header {	background-image: url('../img/h-coop.jpg'); background-position: 0px}
+#pg-projet  header {	background-image: url('../img/h-projet.jpg'); background-position: 0px}
+#pg-candidature  header {	background-image: url('../img/h-candidature.jpg'); background-position: 0px}
