@@ -148,7 +148,7 @@ header {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  background-position: 0px -50px;
+  background-position: 0px;
   background-image: url("../img/header.jpg");
   text-align: center;
   color: white; }
