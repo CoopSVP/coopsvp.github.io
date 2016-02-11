@@ -420,6 +420,13 @@ body {
 strong {font-weight: bold; color: $theme-primary;}
 .portfolio-img {width: 236px; height: 236px;}
 
+blockquote.important {border-color: $theme-primary; margin: 20px 0px 20px 20px;}
+.h-left {float: left;}
+.news {
+	margin-top: 20px;
+	div{margin-right: 20px;}	
+}
+
 #pg-cooperative  header {	background-image: url('../img/h-coop.jpg'); background-position: 0px}
 #pg-projet  header {	background-image: url('../img/h-projet.jpg'); background-position: 0px}
 #pg-candidature  header {	background-image: url('../img/h-candidature.jpg'); background-position: 0px}

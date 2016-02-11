@@ -373,6 +373,18 @@ strong {
   width: 236px;
   height: 236px; }
 
+blockquote.important {
+  border-color: #3D9B35;
+  margin: 20px 0px 20px 20px; }
+
+.h-left {
+  float: left; }
+
+.news {
+  margin-top: 20px; }
+  .news div {
+    margin-right: 20px; }
+
 #pg-cooperative header {
   background-image: url("../img/h-coop.jpg");
   background-position: 0px; }
