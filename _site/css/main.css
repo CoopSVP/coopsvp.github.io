@@ -373,9 +373,12 @@ strong {
   width: 236px;
   height: 236px; }
 
+blockquote {
+  margin: 20px 0px 20px 20px;
+  border-color: #888; }
+
 blockquote.important {
-  border-color: #3D9B35;
-  margin: 20px 0px 20px 20px; }
+  border-color: #3D9B35; }
 
 .h-left {
   float: left; }

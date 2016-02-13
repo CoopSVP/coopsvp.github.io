@@ -420,7 +420,8 @@ body {
 strong {font-weight: bold; color: $theme-primary;}
 .portfolio-img {width: 236px; height: 236px;}
 
-blockquote.important {border-color: $theme-primary; margin: 20px 0px 20px 20px;}
+blockquote{ margin: 20px 0px 20px 20px; border-color: #888;}
+blockquote.important {border-color: $theme-primary;}
 .h-left {float: left;}
 .news {
 	margin-top: 20px;
