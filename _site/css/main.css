@@ -37,6 +37,9 @@ h5,
 h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
 
+h4 {
+  color: #3D9B35; }
+
 p {
   font-size: 16px;
   line-height: 1.5;
@@ -325,6 +328,14 @@ a.btn-default {
   color: #3D9B35;
   font-size: 4em; }
 
+#pg-contributions #contact {
+  background-color: #3D9B35;
+  color: white; }
+  #pg-contributions #contact .fa {
+    color: white; }
+  #pg-contributions #contact a {
+    color: white; }
+
 ::-moz-selection {
   color: white;
   text-shadow: none;
@@ -349,7 +360,8 @@ body {
 /* classes personnalis├®es */
 .container {
   padding-left: 50px;
-  padding-right: 50px; }
+  padding-right: 50px;
+  text-align: justify; }
   .container p {
     font-size: 14px !important; }
   .container ul {

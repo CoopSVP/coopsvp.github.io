@@ -46,6 +46,8 @@ h6 {
     @include sans-serif-font;
 }
 
+h4{ color: $theme-primary;}
+
 p {
     font-size: 16px;
     line-height: 1.5;
@@ -368,6 +370,13 @@ a.btn-default {color: $theme-dark}
     font-size: 4em;
 }
 
+#pg-contributions #contact {
+	background-color: $theme-primary;
+	color: white;
+	.fa {color: white;}
+	a {color: white;}
+}
+
 // Extras
 // -- Highlight Color Customization
 ::-moz-selection {
@@ -400,6 +409,7 @@ body {
 .container {
 	padding-left: 50px;
 	padding-right: 50px;
+	text-align: justify;
 	p {	font-size: 14px !important; }
 	ul{
 		margin-top: 10px;
