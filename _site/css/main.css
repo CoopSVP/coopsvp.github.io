@@ -162,7 +162,7 @@ header {
     width: 100%; }
     header .header-content .header-content-inner {
       border-bottom: 3px solid #3D9B35 !important;
-      background-color: rgba(0, 0, 0, 0.5) !important; }
+      background-color: rgba(0, 0, 0, 1) !important; }
       header .header-content .header-content-inner h1 {
         font-weight: 700;
         text-transform: uppercase;
